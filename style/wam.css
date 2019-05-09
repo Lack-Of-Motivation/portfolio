@@ -190,9 +190,8 @@ body {
 
 .main-center > .main-section {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-  background: #b567ab;
   height: auto;
-  width: 70%;
+  width: 50%;
   margin: auto;
 }
 
@@ -245,7 +244,9 @@ body {
 
 /* --------------- IMAGES ---------------- */
 .main-section > .avatar > img {
-  height: 15em;
+  height: auto;
+  min-height: 200px;
+  max-height: 200px;
   border-radius: 1000px;
 }
 
@@ -294,7 +295,7 @@ body {
 /* --- main-section number 2 > project section */
 
 .main-section > .main-section_projects {
-  background: #593f2f;
+  background: #2b2a2a;
   width: 100%;
 }
 
@@ -315,8 +316,8 @@ body {
   margin: auto;
   height: 2em;
   width: 50%;
-  background-color: #33231a;
-  color: #fffcfc;
+  background-color: #841d22;
+  color: #491c1c;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   font-size: 25px;
   padding-bottom: 3em;
