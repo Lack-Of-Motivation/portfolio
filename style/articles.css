@@ -18,6 +18,7 @@ h2 {
 }
 
 h1 {
+    background: white;
     font-family: "Lora";
     font-size: 25px;
 
@@ -27,17 +28,16 @@ h1 {
     display: grid;
     grid-template-areas: 
     "hl hc hr"
-    "cl cc cr"
-    "fl fc fr";
+    "cl cc cr";
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: repeat(auto-fit, minmax(300px, 400px));
+    grid-template-rows: repeat(2, minmax(300px, 400px));
 }
 
 .grid-centered > .blog-box {
     width: auto;
     border: 2px solid black;
     display: flex;
-    align-self: center;
+    align-self: flex-start;
     margin-bottom: 3em;
     flex-direction: column;
     grid-area: cc;
@@ -45,6 +45,7 @@ h1 {
 
 .grid-centered > .blog-box > .post > .post_title {
     display: flex;
+    justify-content: center;
     border-bottom: 1px solid black;
     padding-bottom: 5px;
 }
@@ -59,20 +60,11 @@ h1 {
 
 .grid-centered > .blog-box > .post {
     padding: 1em;
+    font-size: 20px;
+    line-height: 1.5em;
     
 }
 
-.grid-centered > .blog-box > .post > .post_text > a {
-    margin-top: 10px;
-    display: flex;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    border: 1px solid black;
-    width: 70px;
-    padding: 5px 0px 5px 7px;
-    color: black;
-}
 
 .grid-centered > .footer-disclaimer > h2 {
     background: white;

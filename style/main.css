@@ -14,8 +14,7 @@ body {
 }
 
 h2 {
-    border: 1px solid black;
-    padding: 5px;
+    padding: 10px;
 }
 
 h1, h2 {
@@ -40,9 +39,12 @@ h1, h2 {
     justify-content: center;
 }
 
+
+
 @media (max-width: 590px) {
     .grid-centered > .navigation_bar-rectangle {
         grid-area: hc;
+        align-self: center;
     }
 }
 
@@ -52,7 +54,7 @@ h1, h2 {
 }
 
 .grid-centered > .navigation_bar-rectangle > .navigation_bar-wrapper > .navigation_bar-banner {
-    border-bottom: 3px solid black;
+    border-bottom: 2px solid black;
     font-size: 35px;
 }
 
@@ -71,7 +73,7 @@ h1, h2 {
 @media (max-width: 590px) {
 
     .grid-centered > .navigation_bar-rectangle > .navigation_bar-wrapper > .navigation_bar-items > .navigation_bar-menu-items {
-        border-left: 3px solid black;
+        border-left: 2px solid black;
     }
 
 }
@@ -83,16 +85,16 @@ h1, h2 {
 }
 
 .grid-centered > .navigation_bar-rectangle > .navigation_bar-wrapper > .navigation_bar-items > .navigation_bar-menu-items > li {
-    margin-left: 1em;
-    margin-right: 1em;
-    padding: 3px 7px 3px 7px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding: 3px 9px 3px 9px;
     border: 1px solid black;
 }
 
 .grid-centered > .navigation_bar-rectangle > .navigation_bar-wrapper > .navigation_bar-items > .navigation_bar-menu-items > li > a {
     text-decoration: none;
     font-family: "Slabo 27px";
-    font-size: 20px;
+    font-size: 17px;
     color: black;
 }
 
