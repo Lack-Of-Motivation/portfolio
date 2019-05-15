@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+/* misc. */
+
 ::selection {
     background: #417e82;
     color: white;
 }
+
+/* ------ */
 
 body {
     background: #85b8bf;
