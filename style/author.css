@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background: #417e82;
+    color: white;
+}
+
+body {
+    background: #85b8bf;
+}
+
+h2 {
+    font-family: "Abril Fatface";
+}
+
+h1 {
+    font-family: "Lora";
+    font-size: 25px;
+
+}
+
+.grid-centered {
+    display: grid;
+    grid-template-areas: 
+    "hl hc hr"
+    "cl cc cr"
+    "fl fc fr";
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 3fr 2fr 3fr;
+}
+
+.grid-centered > .about-me {
+    align-self: center;
+    width: auto;
+    border: 2px solid black;
+    display: flex;
+    margin-bottom: 3em;
+    flex-direction: column;
+    grid-area: cc;
+}
+
+.grid-centered > .about-me > .about-me_wrapper > .about-me_title {
+    display: flex;
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+
+
+.grid-centered > .about-me > .about-me_wrapper > .about-me_text {
+    display: flex;
+    line-height: 1.5em;
+    font-size: 20px;
+    flex-direction: column;
+    font-family: "Slabo 27px";
+    padding-top: 1em;
+}
+
+.grid-centered > .about-me > .about-me_wrapper {
+    padding: 1em;
+    
+}
+
+.grid-centered > .about-me > .about-me_wrapper > .about-me_text > a {
+    margin-top: 10px;
+    display: flex;
+    text-decoration: none;
+    font-size: 15px;
+    border: 2px solid black;
+    width: 100px;
+    padding: 5px 6px 5px 6px;
+    color: black;
+}
+
+.grid-centered > .footer-disclaimer > h2 {
+    background: white;
+    padding: 5px;
+}
+
+.grid-centered > .footer-disclaimer {
+    align-self: center;
+    justify-self: flex-end;
+    display: flex;
+    grid-area: hc;
+    font-size: 15px;
+}
+
+.grid-centered > .header-text {
+    grid-area: hc;
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 2em;
+}
+
+.grid-centered > .header-text > h4 {
+    font-size: 35px;
+    font-weight: 500;
+    font-family: "Abril Fatface";
+    background: #3a9e95;
+    color: white;
+    padding: 5px;
+}
+
+.grid-centered > .return-button {
+    display: flex;
+    grid-area: hc;
+    align-self: center;
+}
+
+.grid-centered > .return-button > a {
+    text-decoration: none;
+    color: black;
+    font-family: "Slabo 27px";
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 5px 9px 5px 9px;
+}
+
+
+#two-edit {
+    font-size: 40px;
+}

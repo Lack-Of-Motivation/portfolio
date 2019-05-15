@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background: #417e82;
+    color: white;
+}
+
+body {
+    background: #85b8bf;
+}
+
+h2 {
+    font-family: "Abril Fatface";
+}
+
+h1 {
+    font-family: "Lora";
+    font-size: 25px;
+
+}
+
+.grid-centered {
+    display: grid;
+    grid-template-areas: 
+    "hl hc hr"
+    "cl cc cr"
+    "fl fc fr";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(2, minmax(300px, 1fr));
+}
+
+.grid-centered > .blog-box {
+    width: auto;
+    border: 2px solid black;
+    display: flex;
+    align-self: center;
+    margin-bottom: 3em;
+    flex-direction: column;
+    grid-area: cc;
+}
+
+.grid-centered > .blog-box > .post > .post_title {
+    display: flex;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+
+.grid-centered > .blog-box > .post > .post_text {
+    display: flex;
+    flex-direction: column;
+    font-family: "Slabo 27px";
+    padding-top: 1em;
+}
+
+.grid-centered > .blog-box > .post {
+    padding: 1em;
+    
+}
+
+.grid-centered > .blog-box > .post > .post_text > a {
+    margin-top: 10px;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    border: 2px solid black;
+    width: 100px;
+    padding: 5px 6px 5px 6px;
+    color: black;
+}
+
+.grid-centered > .footer-disclaimer > h2 {
+    background: white;
+    padding: 5px;
+}
+
+.grid-centered > .footer-disclaimer {
+    align-self: center;
+    justify-self: flex-end;
+    display: flex;
+    grid-area: hc;
+    font-size: 15px;
+}
+
+.grid-centered > .header-text {
+    grid-area: hc;
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 2em;
+}
+
+.grid-centered > .header-text > h4 {
+    font-size: 35px;
+    font-family: "Abril Fatface";
+    background: yellow;
+    padding: 5px;
+}
+
+.grid-centered > .return-button {
+    display: flex;
+    grid-area: hc;
+    align-self: center;
+}
+
+.grid-centered > .return-button > a {
+    text-decoration: none;
+    color: black;
+    font-family: "Slabo 27px";
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 5px 9px 5px 9px;
+}
+
+
+#two-edit {
+    font-size: 40px;
+}
