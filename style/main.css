@@ -135,10 +135,9 @@ h1, h2 {
    .grid-centered {
         grid-template-areas: 
         "hc"
-        "bc"
-        "fc";
+        "bc";
         grid-template-columns: 2fr;
-        grid-template-rows: repeat(3, minmax(400px, 1fr));
+        grid-template-rows: repeat(2, minmax(400px, 1fr));
 }
 }
 
