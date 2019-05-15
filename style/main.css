@@ -142,7 +142,7 @@ h1, h2 {
 }
 }
 
-@media (min-width: 604px) and (max-width: 768px) {
+@media (min-width: 590px) and (max-width: 768px) {
 
     .grid-centered > .navigation_bar-rectangle > .navigation_bar-wrapper > .navigation_bar-items > .navigation_bar-menu-items > li {
         border: none;
