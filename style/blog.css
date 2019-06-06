@@ -24,23 +24,27 @@ h1 {
 }
 
 .grid-centered {
+    min-width: 100%;
+    margin-bottom: 10em;
     display: grid;
     grid-template-areas: 
     "hl hc hr"
     "cl cc cr"
     "fl fc fr";
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: repeat(auto-fit, minmax(300px, 400px));
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: repeat(3, minmax(500px, 500px));
 }
 
+
 .grid-centered > .blog-box {
-    width: auto;
+    max-width: 100%;
     border: 2px solid black;
     display: flex;
     align-self: center;
     margin-bottom: 3em;
     flex-direction: column;
     grid-area: cc;
+    flex: 0 0 auto;
 }
 
 .grid-centered > .blog-box > .post > .post_title {
@@ -58,6 +62,8 @@ h1 {
 }
 
 .grid-centered > .blog-box > .post {
+    width: 100%;
+    flex: 1 0 200px;
     padding: 1em;
     
 }
@@ -101,12 +107,32 @@ h1 {
     padding: 5px;
 }
 
+@media (max-width: 550px) {
+   .grid-centered > .header-text {
+       text-align: center;
+   }
+   .grid-centered > .footer-disclaimer {
+       text-align: center;
+   }
+}
+
+
 .grid-centered > .return-button {
     display: flex;
     grid-area: hc;
     align-self: center;
     
 }
+
+@media (max-width: 710px) {
+    .grid-centered > .return-button {
+        margin-top: 3em;
+        justify-self: center;
+        display: flex;
+        align-self: flex-start;
+    }
+}
+
 
 .grid-centered > .return-button > a {
     text-decoration: none;
