@@ -148,7 +148,7 @@ h1, p {
   }
 
 @media only screen 
-  and (max-device-width: 568px)
+  and (max-device-width: 900px)
   and (-webkit-min-device-pixel-ratio: 2) {
     
     .body {
