@@ -144,16 +144,13 @@ h1, p {
   }
 
 @media only screen 
-  and (max-device-width: 900px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (max-device-width: 1150px){
     
     .body {
         min-width: 80%;
     }
 .body > .navigation_bar {
         padding-top: 1em;
-        min-width: 50px;
-        max-width: 560px;
     }
     
 .body > .centered {
