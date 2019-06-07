@@ -160,7 +160,7 @@ h1, p {
     }
     }
 
-@media (max-device-width: 1150px){
+@media (max-width: 1150px){
     
     .body {
         min-width: 80%;
