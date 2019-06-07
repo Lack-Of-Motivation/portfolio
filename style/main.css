@@ -24,10 +24,11 @@ h2 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 17px;
     line-height: 1.5em;
     padding-top: 0.5em;
 }
+
 
 
 h1, p {
@@ -42,10 +43,16 @@ h1, p {
     max-width: 60%;
 }
 
+@media (min-device-height: 100px) {
+    .body {
+        padding-bottom: 5%;
+    }
+}
+
 .body > .navigation_bar {
     border-bottom: 1px solid #bababa;
     color: black;
-    padding: 1em ;
+    padding: 1em;
     flex-shrink: 1;
 }
 
@@ -95,6 +102,15 @@ h1, p {
     color: black;
 }
 
+@media (min-device-width: 568px) and (max-device-width: 1200px) {
+
+    .body > .centered {
+    
+              width: 100%;
+              flex-grow: 1;
+    
+          }
+        }
 
 .body > .centered > .info_box {
    padding-top: 7%;
@@ -124,27 +140,27 @@ h1, p {
 }
 .body > .centered > .contact > .contact_box-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
 }
 
-.body > .centered > .contact > .contact_box-wrapper > .icons > * {
-    margin: 0em 5px;
+.body > .centered > .contact > .contact_box-wrapper > .column-left > .icons { 
+    display: flex;
+    justify-content: center;
 }
 
+.body > .centered > .contact > .contact_box-wrapper > .column-left > .icons > * { 
+    margin: 0% 3% 0% 3%;
+}
 
-@media (min-device-width: 568px) and (max-device-width: 1200px) {
-      
-.body > .centered {
+/* ---- vv - for icons ----- */
+@media (min-device-width: 100px) and (max-device-width: 1200px) {
+    .body > .centered > .contact > .contact_box-wrapper > .column-left {
+        margin: 0 auto;
+    }
+    }
 
-          width: 100%;
-          flex-grow: 1;
-
-      }
-  }
-
-@media only screen 
-  and (max-device-width: 1150px){
+@media (max-device-width: 1150px){
     
     .body {
         min-width: 80%;
