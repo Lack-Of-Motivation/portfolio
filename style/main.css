@@ -154,7 +154,7 @@ h1, p {
 }
 
 /* ---- vv - for icons ----- */
-@media (min-device-width: 100px) and (max-device-width: 1200px) {
+@media (min-width: 100px) and (max-width: 1200px) {
     .body > .centered > .contact > .contact_box-wrapper > .column-left {
         margin: 0 auto;
     }
