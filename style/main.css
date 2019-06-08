@@ -21,10 +21,11 @@ a {
 h2 {
     font-weight: 300;
     font-size: 20px;
+    margin-bottom: 2.5%;
 }
 
 p {
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.5em;
     padding-top: 0.5em;
 }
@@ -32,7 +33,7 @@ p {
 
 
 h1, p {
-    font-family: "Quicksand";
+    font-family: "EB Garamond";
 
 }
 
@@ -50,9 +51,9 @@ h1, p {
 }
 
 .body > .navigation_bar {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #bababa;
     color: black;
-    padding: 1em;
+    padding: 1em 1em 0em 1em;
     flex-shrink: 1;
 }
 
@@ -87,7 +88,6 @@ h1, p {
 }
 
 
-
 .body > .navigation_bar > .navigation_bar-wrapper > .navigation_bar-menu > ul > li {
     padding: 15px;
     margin-right: 0.5rem;
@@ -96,8 +96,8 @@ h1, p {
 
 .body > .navigation_bar > .navigation_bar-wrapper > .navigation_bar-menu > ul > li > a {
     text-decoration: none;
-    font-family: "Quicksand";
-    font-size: 13px;
+    font-family: "EB Garamond";
+    font-size: 15px;
     font-weight: 500;
     color: black;
 }
@@ -130,7 +130,7 @@ h1, p {
 .body > .centered > .works > .works_box-wrapper > .tech-icons {
     padding-top: 3%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
 }
 
@@ -143,15 +143,38 @@ h1, p {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    font-family: "EB Garamond";
+}
+
+.body > .centered > .contact > .contact_box-wrapper > .text {
+
+    max-width: 35%;
+
 }
 
 .body > .centered > .contact > .contact_box-wrapper > .column-left > .icons { 
     display: flex;
     justify-content: center;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #bababa;
 }
 
 .body > .centered > .contact > .contact_box-wrapper > .column-left > .icons > * { 
     margin: 0% 3% 0% 3%;
+}
+
+@media (min-width: 100px) and (max-width: 650px) {
+    .body > .centered > .contact > .contact_box-wrapper > .text {
+
+        max-width: 70%;
+        padding-top: 5%;
+    
+    }
+
+
+    .body > .centered > .contact > .contact_box-wrapper {
+        padding-top: 10%;
+    }
 }
 
 /* ---- vv - for icons ----- */
@@ -159,7 +182,7 @@ h1, p {
     .body > .centered > .contact > .contact_box-wrapper > .column-left {
         margin: 0 auto;
     }
-    }
+ }
 
 @media (max-width: 1150px){
     
@@ -200,6 +223,11 @@ h1, p {
         flex-direction: column;
         width: 100%;
     }
+
+    .body > .centered > .contact > .contact_box-wrapper > .text {
+        margin: 0 auto;
+    }
+
     
 .body > .centered > .contact > .contact_box-wrapper > .text > p {
         font-size: 15px;
