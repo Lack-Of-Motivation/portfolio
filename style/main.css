@@ -19,7 +19,8 @@ a {
 }
 
 h2 {
-    font-weight: 300;
+    font-family: "Raleway";
+    font-weight: 600;
     font-size: 20px;
     margin-bottom: 2.5%;
 }
@@ -33,7 +34,7 @@ p {
 
 
 h1, p {
-    font-family: "EB Garamond";
+    font-family: "Raleway";
 
 }
 
@@ -52,7 +53,8 @@ h1, p {
 
 .body > .navigation_bar {
     color: black;
-    padding: 1em 1em 0em 1em;
+    padding: 3em 1em 5em 1em;
+    border-bottom: 1px solid #bababa;
     flex-shrink: 1;
 }
 
@@ -91,9 +93,9 @@ h1, p {
 
 .body > .navigation_bar > .navigation_bar-wrapper > .navigation_bar-menu > ul > li > a {
     text-decoration: none;
-    font-family: "EB Garamond";
+    font-family: "Raleway";
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     color: black;
 }
 
@@ -142,7 +144,7 @@ h1, p {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    font-family: "EB Garamond";
+    font-family: "Raleway";
 }
 
 .body > .centered > .contact > .contact_box-wrapper > .text {
@@ -163,6 +165,7 @@ h1, p {
 }
 
 @media (min-width: 100px) and (max-width: 650px) {
+
     .body > .centered > .contact > .contact_box-wrapper > .text {
 
         max-width: 70%;
