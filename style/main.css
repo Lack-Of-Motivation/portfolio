@@ -51,7 +51,6 @@ h1, p {
 }
 
 .body > .navigation_bar {
-    border-bottom: 1px solid #bababa;
     color: black;
     padding: 1em 1em 0em 1em;
     flex-shrink: 1;
@@ -69,10 +68,6 @@ h1, p {
     display: flex;
     padding-right: 2em;
     font-weight: 500;
-}
-
-.body > .navigation_bar > .navigation_bar-wrapper > .navigation_bar-banner > * {
-    margin-left: 0.5em;
 }
 
 
@@ -124,6 +119,10 @@ h1, p {
 .body > .centered > .contact > .contact_box-wrapper {
     border-top: 1px solid #bababa;
     padding-top: 5%;
+}
+
+.body > .centered > .section {
+    padding: 5% 0% 5% 0%;
 }
     
 
