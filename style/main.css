@@ -19,7 +19,7 @@ a {
 }
 
 h2 {
-    font-family: "Raleway";
+    font-family: "Lora";
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 2.5%;
@@ -34,7 +34,7 @@ p {
 
 
 h1, p {
-    font-family: "Raleway";
+    font-family: "Lora";
 
 }
 
@@ -54,7 +54,6 @@ h1, p {
 .body > .navigation_bar {
     color: black;
     padding: 3em 1em 5em 1em;
-    border-bottom: 1px solid #bababa;
     flex-shrink: 1;
 }
 
@@ -68,10 +67,14 @@ h1, p {
 
 .body > .navigation_bar > .navigation_bar-wrapper > .navigation_bar-banner {
     display: flex;
-    padding-right: 2em;
+    padding: 15px;
     font-weight: 500;
 }
 
+.body > .navigation_bar > .navigation_bar-wrapper > .navigation_bar-banner > h2 {
+    border-radius: 15px;
+    padding: 15px;
+}
 
 .body > .navigation_bar > .navigation_bar-wrapper > .navigation_bar-menu {
     display: flex;
@@ -87,16 +90,23 @@ h1, p {
 
 .body > .navigation_bar > .navigation_bar-wrapper > .navigation_bar-menu > ul > li {
     padding: 15px;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
 }
 
 .body > .navigation_bar > .navigation_bar-wrapper > .navigation_bar-menu > ul > li > a {
     text-decoration: none;
-    font-family: "Raleway";
+    font-family: "Lora";
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 900;
     color: black;
+}
+
+.body > .centered {
+    
+    width: 100%;
+    flex-grow: 1;
+
 }
 
 @media (min-device-width: 568px) and (max-device-width: 1200px) {
@@ -124,7 +134,7 @@ h1, p {
 }
 
 .body > .centered > .section {
-    padding: 5% 0% 5% 0%;
+    padding: 5% 0% 6% 0%;
 }
     
 
@@ -140,6 +150,11 @@ h1, p {
      margin: 0% 2% 0% 0%;
 
 }
+
+.body > .centered > .contact {
+    margin-top: 10%;
+}
+
 .body > .centered > .contact > .contact_box-wrapper {
     display: flex;
     flex-direction: row-reverse;
@@ -168,7 +183,7 @@ h1, p {
 
     .body > .centered > .contact > .contact_box-wrapper > .text {
 
-        max-width: 70%;
+        max-width: 90%;
         padding-top: 5%;
     
     }
@@ -209,12 +224,9 @@ h1, p {
 
 .body > .navigation_bar > .navigation_bar-wrapper {
         margin: 0 auto;
-        justify-content: center;
+        flex-direction: column;
     }
     
-.body > .navigation_bar > .navigation_bar-wrapper > .navigation_bar-menu > ul {
-        display: none;
-    }
 
     .body > .centered > .contact {
         padding-top: 4%;
@@ -228,6 +240,7 @@ h1, p {
 
     .body > .centered > .contact > .contact_box-wrapper > .text {
         margin: 0 auto;
+        width: 70%;
     }
 
     
